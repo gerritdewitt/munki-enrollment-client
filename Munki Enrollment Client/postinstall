@@ -1,0 +1,51 @@
+#!/bin/sh
+
+#  postinstall.sh
+#  Munki Enrollment Client
+
+# Written by Gerrit DeWitt (gdewitt@gsu.edu)
+# Project started 2015-06-15.  This file created 2015-08-13.
+# Copyright Georgia State University.
+# This script uses publicly-documented methods known to those skilled in the art.
+# References: See top level Read Me.
+
+declare -x PATH="/usr/bin:/bin:/usr/sbin:/sbin"
+
+# MARK: VARIABLES
+declare -x SETUP_ASSISTANT_SEMAPHORE_FILE="$3/private/var/db/.AppleSetupDone"
+declare -x AUTO_LOGIN_PASSWORD_FILE="$3/private/etc/kcpasswd"
+declare -x AUTO_LOGIN_PASSWORD_FILE_MOVED="$3/private/etc/kcpasswd.moved"
+declare -x LOGIN_WINDOW_PREFS_FILE="$3/Library/Preferences/com.apple.loginwindow.plist"
+declare -x RESULT_TRANSACTION_A_FILE_PATH="$3/Library/Preferences/edu.gsu.mec.result.transaction.a.plist"
+
+# Do not show the OS X Setup Assistant:
+# Only relevant to systems without user accounts (e.g. ones
+# imaged with an AutoDMG-generated, never-booted system).
+# Since we may be installing to a system that we just imaged
+# (never booted), there won't be any users, and the Setup
+# Assistant will want to run.  We don't want that to happen
+# because the MEC app needs to run in the login window context.
+# The MEC app will create any local user accounts as part of
+# its procedure.
+touch "$SETUP_ASSISTANT_SEMAPHORE_FILE"
+
+# Disable automatic login:
+# Our installer pkg requires a reboot, and we run the MEC app
+# in the LoginWindow context.  So we have to make sure we don't
+# bypass the LoginWindow via the automatic login mechanisms.
+
+# Disable automatic login:
+if [ -f "$AUTO_LOGIN_PASSWORD_FILE" ]; then
+    mv "$AUTO_LOGIN_PASSWORD_FILE" "$AUTO_LOGIN_PASSWORD_FILE_MOVED"
+fi
+
+# Disable FileVault automatic login:
+defaults write "$LOGIN_WINDOW_PREFS_FILE" DisableFDEAutoLogin -bool YES
+
+# Remove specific temporary file if present:
+# Keys in file helps the MEC decide if it should start fresh.
+# Their absence tells it to start fresh, and we want that
+# when the MEC is installed or reinstalled:
+if [ -f "$RESULT_TRANSACTION_A_FILE_PATH" ]; then
+    rm "$RESULT_TRANSACTION_A_FILE_PATH"
+fi
