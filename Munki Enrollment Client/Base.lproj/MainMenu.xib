@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7702" systemVersion="14F1912" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7702"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
+            <connections>
+                <outlet property="confirmationTab" destination="4tY-bk-2FB" id="tBo-qC-ijA"/>
+                <outlet property="confirmationTabAcceptNameAndGroupButton" destination="GGR-Jv-VEZ" id="RYP-EV-y70"/>
+                <outlet property="confirmationTabActionLabel" destination="gWF-nR-wLd" id="Q1K-l9-tmV"/>
+                <outlet property="confirmationTabBox" destination="4KA-3m-5lW" id="kcH-7p-GT5"/>
+                <outlet property="confirmationTabChangeNameOrGroupButton" destination="b77-v2-6UR" id="W3p-Xd-iYm"/>
+                <outlet property="confirmationTabGroupLabel" destination="L5x-Bo-4KJ" id="Z2c-g8-44s"/>
+                <outlet property="confirmationTabHeading" destination="bG1-3a-cuf" id="rGX-bj-3ON"/>
+                <outlet property="confirmationTabIndeterminateBar" destination="iYc-Fq-nBa" id="kwf-Ar-LUh"/>
+                <outlet property="confirmationTabNameLabel" destination="97j-At-vcy" id="TbY-Bj-XQl"/>
+                <outlet property="confirmationTabSubheading" destination="bVz-oc-ew0" id="qnV-FB-oj4"/>
+                <outlet property="errorTab" destination="Bk9-PY-pcu" id="6vL-nG-dIa"/>
+                <outlet property="errorTabDetails" destination="Usa-oD-e7W" id="qda-V2-66g"/>
+                <outlet property="errorTabIcon" destination="yLq-S6-3lr" id="Wxq-MZ-p9M"/>
+                <outlet property="errorTabIgnoreWarningButton" destination="Blp-RE-she" id="T3d-o1-Fqr"/>
+                <outlet property="errorTabLabel" destination="qwD-hE-Lmw" id="8oj-Fe-5CR"/>
+                <outlet property="errorTabStartOverButton" destination="MJf-I6-u1g" id="evd-gp-K4I"/>
+                <outlet property="errorTabStopButton" destination="xdI-Kq-NzH" id="etl-nl-HaV"/>
+                <outlet property="firstTab" destination="77A-ts-e40" id="oqg-vv-1Wp"/>
+                <outlet property="firstTabDetails" destination="dzp-KM-Ymn" id="sVG-W4-pEx"/>
+                <outlet property="firstTabIndeterminateBar" destination="3Lf-9k-IWO" id="qUX-41-FS0"/>
+                <outlet property="firstTabLabel" destination="xI4-5R-jL0" id="1Wb-Y6-U5I"/>
+                <outlet property="groupTab" destination="MfJ-WO-rmX" id="uKh-l5-lN9"/>
+                <outlet property="groupTabActionLabel" destination="Hwl-IE-sbN" id="TN1-xR-Ew6"/>
+                <outlet property="groupTabArrayController" destination="zpV-Aa-7sm" id="5sG-sl-oH1"/>
+                <outlet property="groupTabBox" destination="UYa-yx-akB" id="u22-YY-Rtl"/>
+                <outlet property="groupTabDescription" destination="hvU-04-pgh" id="vae-HG-HqI"/>
+                <outlet property="groupTabHeading" destination="fX5-pi-qn3" id="IFP-kV-jd3"/>
+                <outlet property="groupTabJoinButton" destination="HAD-qO-HHh" id="xcu-In-OW7"/>
+                <outlet property="groupTabSearchField" destination="aKZ-Ea-nQd" id="nnc-RV-ADa"/>
+                <outlet property="groupTabSubheading" destination="FuD-zo-Ywc" id="kan-Bp-XRd"/>
+                <outlet property="groupTabTableView" destination="A7J-7x-TCa" id="h5G-86-WCg"/>
+                <outlet property="lastTab" destination="XIO-yz-3aE" id="vPW-Mx-5A1"/>
+                <outlet property="lastTabDetails" destination="6oV-BN-lwd" id="9dC-Rq-vlL"/>
+                <outlet property="lastTabIcon" destination="eXE-IF-8Df" id="5nG-4O-Pbo"/>
+                <outlet property="lastTabLabel" destination="c6e-0m-9rT" id="h3l-Xe-sc9"/>
+                <outlet property="lastTabRestartButton" destination="BCg-EI-YC3" id="3hX-Es-XbL"/>
+                <outlet property="munkiTab" destination="Pfv-q8-4Ub" id="YNz-Iq-q6R"/>
+                <outlet property="munkiTabDetails" destination="qmd-yV-402" id="1XJ-Tn-nZl"/>
+                <outlet property="munkiTabIcon" destination="e6p-Fh-8yZ" id="8WE-Gb-x8e"/>
+                <outlet property="munkiTabIndeterminateBar" destination="RFu-IQ-zNq" id="SCW-bi-jP2"/>
+                <outlet property="munkiTabLabel" destination="wk5-7B-aql" id="PPS-Sc-Cdx"/>
+                <outlet property="munkiTabMeteredBar" destination="xsw-rb-5Ml" id="mrW-qE-6SX"/>
+                <outlet property="nameTab" destination="gGC-OH-EVL" id="NSd-V7-vxz"/>
+                <outlet property="nameTabActionLabel" destination="jnE-ta-UX0" id="dtB-G4-vuM"/>
+                <outlet property="nameTabComputerNameBox" destination="aFh-g0-Wee" id="Oa0-Ab-moF"/>
+                <outlet property="nameTabComputerNameField" destination="q5K-xZ-gaC" id="fDa-j0-qng"/>
+                <outlet property="nameTabContinueButton" destination="3mr-ks-BBU" id="xf8-y1-KUw"/>
+                <outlet property="nameTabDetails2" destination="P9K-Mg-ItU" id="Ujn-WL-46s"/>
+                <outlet property="nameTabHeading" destination="CXk-pf-sTo" id="lgM-n9-0l6"/>
+                <outlet property="nameTabSubheading" destination="x5Y-oJ-YrF" id="kbf-Sn-9Ps"/>
+                <outlet property="peTab" destination="vOF-4A-Zux" id="RSr-Es-3Ut"/>
+                <outlet property="peTabActionLabel" destination="IF8-Ld-HoS" id="4YO-ye-bPw"/>
+                <outlet property="peTabChangeNameOrGroupButton" destination="c4a-pY-9df" id="K0o-Ip-UPd"/>
+                <outlet property="peTabGroupLabel" destination="FNn-LJ-iok" id="DGV-LT-bvh"/>
+                <outlet property="peTabHeading" destination="O0E-de-MZd" id="xbT-tb-J1m"/>
+                <outlet property="peTabNameDetails" destination="nbD-Ve-czE" id="L9B-zJ-M1L"/>
+                <outlet property="peTabNameLabel" destination="0hu-e0-AZ1" id="aEE-1g-F0z"/>
+                <outlet property="peTabSubheading" destination="GNt-gc-jBP" id="BYQ-oo-xHd"/>
+                <outlet property="peTabUseExistingNameAndGroupButton" destination="uWd-hB-GAJ" id="CEc-QY-gvg"/>
+                <outlet property="tabView" destination="4JW-29-xhi" id="2CE-GU-1Wx"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="lzo-h2-HQt"/>
+            </connections>
+        </customObject>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <window title="Munki Enrollment Client 1.5" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <rect key="contentRect" x="335" y="390" width="700" height="500"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+            <view key="contentView" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="700" height="500"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <tabView type="noTabsNoBorder" translatesAutoresizingMaskIntoConstraints="NO" id="4JW-29-xhi" userLabel="tabView">
+                        <rect key="frame" x="10" y="8" width="681" height="485"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="485" id="Gqq-8s-gFM"/>
+                            <constraint firstAttribute="width" constant="681" id="oyQ-0Z-5UW"/>
+                        </constraints>
+                        <font key="font" metaFont="system"/>
+                        <tabViewItems>
+                            <tabViewItem label="1" identifier="1" id="77A-ts-e40" userLabel="firstTab">
+                                <view key="view" id="DQz-3e-7rd">
+                                    <rect key="frame" x="0.0" y="0.0" width="681" height="485"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xI4-5R-jL0">
+                                            <rect key="frame" x="2" y="425" width="670" height="44"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="FIRST_TAB_LABEL" id="W4d-vA-k63">
+                                                <font key="font" metaFont="system" size="32"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dzp-KM-Ymn">
+                                            <rect key="frame" x="14" y="227" width="645" height="189"/>
+                                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="FIRST_TAB_DETAILS" id="3ef-cl-CZ0">
+                                                <font key="font" metaFont="system" size="18"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <progressIndicator fixedFrame="YES" maxValue="100" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="3Lf-9k-IWO">
+                                            <rect key="frame" x="324" y="187" width="32" height="32"/>
+                                        </progressIndicator>
+                                    </subviews>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="1" identifier="1" id="vOF-4A-Zux" userLabel="peTab">
+                                <view key="view" id="VP5-ye-jHZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="681" height="485"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GNt-gc-jBP" userLabel="peTabSubheading">
+                                            <rect key="frame" x="18" y="377" width="645" height="39"/>
+                                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" id="jGP-BB-JSq">
+                                                <font key="font" metaFont="system" size="14"/>
+                                                <string key="title">PE_TAB_SUBHEADING
+PE_TAB_SUBHEADING</string>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <box autoresizesSubviews="NO" fixedFrame="YES" title="computerNameBox" borderType="line" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="Vwe-1a-rer" userLabel="peTabComputerNameBox">
+                                            <rect key="frame" x="75" y="261" width="530" height="110"/>
+                                            <view key="contentView">
+                                                <rect key="frame" x="1" y="1" width="528" height="108"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0hu-e0-AZ1">
+                                                        <rect key="frame" x="94" y="62" width="341" height="23"/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="No Name Provided" placeholderString="" id="i66-jr-K8e">
+                                                            <font key="font" metaFont="systemBold" size="19"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nbD-Ve-czE" userLabel="peTabNameDetail">
+                                                        <rect key="frame" x="16" y="14" width="496" height="34"/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" id="iGf-MX-VgY">
+                                                            <font key="font" metaFont="system"/>
+                                                            <string key="title">PE_TAB_NAME_DETAILS
+PE_TAB_NAME_DETAILS</string>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                </subviews>
+                                            </view>
+                                            <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                                            <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </box>
+                                        <box verticalHuggingPriority="750" fixedFrame="YES" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="O3h-sr-p1o">
+                                            <rect key="frame" x="20" y="77" width="641" height="5"/>
+                                            <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                                            <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <font key="titleFont" metaFont="system"/>
+                                        </box>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uWd-hB-GAJ" userLabel="peTabUseExistingNameAndGroupButton">
+                                            <rect key="frame" x="500" y="13" width="167" height="32"/>
+                                            <buttonCell key="cell" type="push" title="Keep Name &amp; Group" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="dIy-5E-Llo">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                                <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="clickedUseExistingNameAndGroupButton:" target="Voe-Tx-rLC" id="4gz-ZH-QfB"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c4a-pY-9df" userLabel="peTabChangeNameOrGroupButton">
+                                            <rect key="frame" x="313" y="13" width="187" height="32"/>
+                                            <buttonCell key="cell" type="push" title="Change Name or Group" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Vic-IO-sBG">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="clickedChangeNameOrGroupButton:" target="Voe-Tx-rLC" id="ZtJ-Up-qTP"/>
+                                            </connections>
+                                        </button>
+                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IF8-Ld-HoS" userLabel="peTabActionLabel">
+                                            <rect key="frame" x="18" y="49" width="645" height="22"/>
+                                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="PE_TAB_ACTION_LABEL" id="ibR-qJ-iLY">
+                                                <font key="font" metaFont="system" size="18"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O0E-de-MZd" userLabel="peTabHeading">
+                                            <rect key="frame" x="5" y="424" width="670" height="44"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="PE_TAB_HEADING" id="Uun-Qb-9hg">
+                                                <font key="font" metaFont="system" size="32"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <box autoresizesSubviews="NO" fixedFrame="YES" title="computerGroupBox" borderType="line" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="bOn-gw-oC5" userLabel="peTabComputerGroupBox">
+                                            <rect key="frame" x="75" y="178" width="530" height="81"/>
+                                            <view key="contentView">
+                                                <rect key="frame" x="1" y="1" width="528" height="79"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FNn-LJ-iok" userLabel="peTabGroupLabel">
+                                                        <rect key="frame" x="38" y="14" width="452" height="53"/>
+                                                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="No Group Provided" placeholderString="No Group Provided" id="NEG-17-o5w">
+                                                            <font key="font" metaFont="systemBold" size="17"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                </subviews>
+                                            </view>
+                                            <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                                            <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </box>
+                                    </subviews>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="2" identifier="2" id="MfJ-WO-rmX" userLabel="groupTab">
+                                <view key="view" id="NVO-4u-QvB">
+                                    <rect key="frame" x="0.0" y="0.0" width="681" height="485"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fX5-pi-qn3" userLabel="groupTabHeading">
+                                            <rect key="frame" x="5" y="425" width="670" height="44"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="GROUP_TAB_HEADING" id="F0J-c7-YII">
+                                                <font key="font" metaFont="system" size="32"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FuD-zo-Ywc" userLabel="groupTabSubheading">
+                                            <rect key="frame" x="15" y="405" width="645" height="18"/>
+                                            <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="center" title="GROUP_TAB_SUBHEADING" usesSingleLineMode="YES" id="mQV-5p-7hZ">
+                                                <font key="font" metaFont="system" size="14"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <box autoresizesSubviews="NO" fixedFrame="YES" title="computerNameBox" borderType="line" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="UYa-yx-akB" userLabel="groupTabBox">
+                                            <rect key="frame" x="18" y="84" width="644" height="308"/>
+                                            <view key="contentView">
+                                                <rect key="frame" x="1" y="1" width="642" height="306"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="22" horizontalPageScroll="10" verticalLineScroll="22" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vQ-FO-hfB">
+                                                        <rect key="frame" x="18" y="70" width="606" height="194"/>
+                                                        <clipView key="contentView" misplaced="YES" id="QaY-Nq-k6L">
+                                                            <rect key="frame" x="1" y="17" width="238" height="117"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <subviews>
+                                                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="20" rowSizeStyle="automatic" headerView="UJS-h3-fop" viewBased="YES" id="A7J-7x-TCa">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="604" height="0.0"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                    <size key="intercellSpacing" width="3" height="2"/>
+                                                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                    <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                                                    <tableColumns>
+                                                                        <tableColumn width="601" minWidth="40" maxWidth="1000" id="5kC-DY-z80">
+                                                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Munki Computer Group">
+                                                                                <font key="font" metaFont="smallSystem"/>
+                                                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                                            </tableHeaderCell>
+                                                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="cw1-XQ-Vqm">
+                                                                                <font key="font" metaFont="system"/>
+                                                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                            </textFieldCell>
+                                                                            <sortDescriptor key="sortDescriptorPrototype" selector="caseInsensitiveCompare:" sortKey="display_name"/>
+                                                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                            <prototypeCellViews>
+                                                                                <tableCellView id="a0I-hJ-VS1">
+                                                                                    <rect key="frame" x="1" y="1" width="601" height="20"/>
+                                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                                    <subviews>
+                                                                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lj6-73-VtE">
+                                                                                            <rect key="frame" x="0.0" y="3" width="596" height="17"/>
+                                                                                            <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="c4r-PP-LsG">
+                                                                                                <font key="font" metaFont="system"/>
+                                                                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                                                <connections>
+                                                                                                    <binding destination="a0I-hJ-VS1" name="value" keyPath="objectValue.display_name" id="yNd-L7-cbR"/>
+                                                                                                </connections>
+                                                                                            </textFieldCell>
+                                                                                        </textField>
+                                                                                    </subviews>
+                                                                                    <connections>
+                                                                                        <outlet property="textField" destination="Lj6-73-VtE" id="0uw-MI-Pq8"/>
+                                                                                    </connections>
+                                                                                </tableCellView>
+                                                                            </prototypeCellViews>
+                                                                            <connections>
+                                                                                <binding destination="zpV-Aa-7sm" name="value" keyPath="selection.display_name" id="B6b-AF-T8F"/>
+                                                                            </connections>
+                                                                        </tableColumn>
+                                                                    </tableColumns>
+                                                                    <connections>
+                                                                        <action selector="selectedGroupFromTable:" target="Voe-Tx-rLC" id="bGi-aY-wgS"/>
+                                                                        <binding destination="zpV-Aa-7sm" name="content" keyPath="arrangedObjects" id="SCH-nl-Xjs"/>
+                                                                    </connections>
+                                                                </tableView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </clipView>
+                                                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="3HE-xJ-av2">
+                                                            <rect key="frame" x="1" y="119" width="223" height="15"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </scroller>
+                                                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="yTa-is-c8g">
+                                                            <rect key="frame" x="224" y="17" width="15" height="102"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </scroller>
+                                                        <tableHeaderView key="headerView" id="UJS-h3-fop">
+                                                            <rect key="frame" x="0.0" y="0.0" width="238" height="17"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </tableHeaderView>
+                                                    </scrollView>
+                                                    <searchField wantsLayer="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aKZ-Ea-nQd">
+                                                        <rect key="frame" x="18" y="272" width="606" height="22"/>
+                                                        <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" alignment="left" placeholderString="Search for a Munki Computer Group" usesSingleLineMode="YES" bezelStyle="round" id="kHr-EO-34R">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </searchFieldCell>
+                                                        <connections>
+                                                            <action selector="filterGroupsDictArray:" target="Voe-Tx-rLC" id="aLX-RE-eO4"/>
+                                                        </connections>
+                                                    </searchField>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hvU-04-pgh" userLabel="groupTabDescription">
+                                                        <rect key="frame" x="16" y="14" width="610" height="48"/>
+                                                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Group Description" id="lzr-Lf-21d">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                        <connections>
+                                                            <binding destination="zpV-Aa-7sm" name="value" keyPath="selectedObjects.description" id="SnY-u9-5st"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                            </view>
+                                            <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                                            <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </box>
+                                        <box verticalHuggingPriority="750" fixedFrame="YES" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="cdb-j7-Ot6">
+                                            <rect key="frame" x="20" y="77" width="641" height="4"/>
+                                            <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                                            <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <font key="titleFont" metaFont="system"/>
+                                        </box>
+                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hwl-IE-sbN" userLabel="groupTabActionLabel">
+                                            <rect key="frame" x="15" y="49" width="645" height="22"/>
+                                            <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="right" title="GROUP_TAB_ACTION_LABEL" usesSingleLineMode="YES" id="bAa-hS-73o">
+                                                <font key="font" metaFont="system" size="18"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HAD-qO-HHh" userLabel="groupTabJoinButton">
+                                            <rect key="frame" x="552" y="13" width="115" height="32"/>
+                                            <buttonCell key="cell" type="push" title="Join Group" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ppM-eR-Qkp">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                                <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="clickedJoinGroupButton:" target="Voe-Tx-rLC" id="2bO-z1-npf"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="3" identifier="2" id="gGC-OH-EVL" userLabel="nameTab">
+                                <view key="view" id="WGY-cK-jmu">
+                                    <rect key="frame" x="0.0" y="0.0" width="681" height="485"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CXk-pf-sTo" userLabel="nameTabHeading">
+                                            <rect key="frame" x="3" y="425" width="670" height="44"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="NAME_TAB_HEADING" id="xOQ-pf-rqr">
+                                                <font key="font" metaFont="system" size="32"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <box autoresizesSubviews="NO" fixedFrame="YES" title="computerNameBox" borderType="line" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="aFh-g0-Wee" userLabel="nameTabComputerNameBox">
+                                            <rect key="frame" x="75" y="194" width="530" height="183"/>
+                                            <view key="contentView">
+                                                <rect key="frame" x="1" y="1" width="528" height="181"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P9K-Mg-ItU" userLabel="nameTabNameDetail">
+                                                        <rect key="frame" x="16" y="14" width="496" height="119"/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" id="zB1-eD-dxX">
+                                                            <font key="font" metaFont="system"/>
+                                                            <string key="title">NAME_TAB_DETAILS_2
+NAME_TAB_DETAILS_2
+NAME_TAB_DETAILS_2
+NAME_TAB_DETAILS_2
+NAME_TAB_DETAILS_2
+NAME_TAB_DETAILS_2
+NAME_TAB_DETAILS_2</string>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jUC-Ww-15t">
+                                                        <rect key="frame" x="129" y="144" width="76" height="23"/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Name:" placeholderString="GSU-MAC-" id="wL6-9U-b9y">
+                                                            <font key="font" metaFont="systemBold" size="19"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q5K-xZ-gaC" userLabel="nameTabComputerNameField">
+                                                        <rect key="frame" x="213" y="141" width="185" height="28"/>
+                                                        <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" continuous="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" placeholderString="Type a Name" drawsBackground="YES" usesSingleLineMode="YES" id="Q6G-ZT-YlQ">
+                                                            <font key="font" metaFont="system" size="19"/>
+                                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                            <allowedInputSourceLocales>
+                                                                <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                                            </allowedInputSourceLocales>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                </subviews>
+                                            </view>
+                                            <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                                            <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </box>
+                                        <box verticalHuggingPriority="750" fixedFrame="YES" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="daU-ZV-WuX">
+                                            <rect key="frame" x="20" y="77" width="641" height="5"/>
+                                            <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                                            <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <font key="titleFont" metaFont="system"/>
+                                        </box>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3mr-ks-BBU" userLabel="nameTabContinueButton">
+                                            <rect key="frame" x="552" y="13" width="115" height="32"/>
+                                            <buttonCell key="cell" type="push" title="Set Name" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Lkk-yh-pHk">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                                <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="clickedSetNameButton:" target="Voe-Tx-rLC" id="KbG-eG-8lE"/>
+                                            </connections>
+                                        </button>
+                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jnE-ta-UX0" userLabel="confirmationTabActionLabel">
+                                            <rect key="frame" x="15" y="49" width="645" height="22"/>
+                                            <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="right" title="CONFIRMATION_TAB_ACTION_LABEL" usesSingleLineMode="YES" id="4UM-BG-wvL">
+                                                <font key="font" metaFont="system" size="18"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x5Y-oJ-YrF" userLabel="nameTabSubheading">
+                                            <rect key="frame" x="15" y="405" width="645" height="22"/>
+                                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="NAME_TAB_SUBHEADING" id="gsn-Hx-9wP">
+                                                <font key="font" metaFont="system" size="14"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </subviews>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="1" identifier="1" id="4tY-bk-2FB" userLabel="confirmationTab">
+                                <view key="view" id="s2l-dJ-mFg">
+                                    <rect key="frame" x="0.0" y="0.0" width="681" height="485"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <progressIndicator fixedFrame="YES" maxValue="100" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="iYc-Fq-nBa" userLabel="confirmationTabIndeterminateBar">
+                                            <rect key="frame" x="324" y="226" width="32" height="32"/>
+                                        </progressIndicator>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bG1-3a-cuf" userLabel="confirmationTabHeading">
+                                            <rect key="frame" x="2" y="425" width="670" height="44"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="CONFIRMATION_TAB_HEADING" id="W5K-r6-EE1">
+                                                <font key="font" metaFont="system" size="32"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bVz-oc-ew0" userLabel="confirmationTabSubheading">
+                                            <rect key="frame" x="18" y="377" width="645" height="39"/>
+                                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" id="gGb-lh-Yf7">
+                                                <font key="font" metaFont="system" size="14"/>
+                                                <string key="title">CONFIRMATION_TAB_SUBHEADING
+CONFIRMATION_TAB_SUBHEADING</string>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <box autoresizesSubviews="NO" fixedFrame="YES" title="computerNameBox" borderType="line" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="4KA-3m-5lW" userLabel="confirmationTabBox">
+                                            <rect key="frame" x="75" y="222" width="530" height="137"/>
+                                            <view key="contentView">
+                                                <rect key="frame" x="1" y="1" width="528" height="135"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="97j-At-vcy" userLabel="confirmationTabNameLabel">
+                                                        <rect key="frame" x="94" y="100" width="341" height="23"/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="No Name Provided" placeholderString="" id="77Q-TB-Dcu">
+                                                            <font key="font" metaFont="systemBold" size="19"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L5x-Bo-4KJ" userLabel="confirmationTabGroupLabel">
+                                                        <rect key="frame" x="38" y="40" width="452" height="57"/>
+                                                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="No Group Provided" placeholderString="No Group Provided" id="1Es-Z2-KUI">
+                                                            <font key="font" metaFont="systemBold" size="17"/>
+                                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                    </textField>
+                                                </subviews>
+                                            </view>
+                                            <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                                            <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </box>
+                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gWF-nR-wLd" userLabel="confirmationTabActionLabel">
+                                            <rect key="frame" x="18" y="49" width="645" height="22"/>
+                                            <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="right" title="CONFIRMATION_TAB_ACTION_LABEL" usesSingleLineMode="YES" id="i1j-Id-864">
+                                                <font key="font" metaFont="system" size="18"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <box verticalHuggingPriority="750" fixedFrame="YES" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="Ard-6V-ySb">
+                                            <rect key="frame" x="20" y="77" width="641" height="5"/>
+                                            <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                                            <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <font key="titleFont" metaFont="system"/>
+                                        </box>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b77-v2-6UR" userLabel="confirmationTabChangeNameOrGroupButton">
+                                            <rect key="frame" x="425" y="13" width="121" height="32"/>
+                                            <buttonCell key="cell" type="push" title="No, Go Back" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="o6k-le-KMS">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                                <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="clickedChangeNameOrGroupButton:" target="Voe-Tx-rLC" id="tpR-PG-ZAN"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GGR-Jv-VEZ" userLabel="confirmationTabAcceptNameAndGroupButton">
+                                            <rect key="frame" x="546" y="13" width="121" height="32"/>
+                                            <buttonCell key="cell" type="push" title="Yes, Continue" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cK3-uT-TbT">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                                <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="clickedAcceptNameAndGroupButton:" target="Voe-Tx-rLC" id="ECz-QN-0Xt"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="4" identifier="2" id="Pfv-q8-4Ub" userLabel="munkiTab">
+                                <view key="view" id="Chn-xc-d5F">
+                                    <rect key="frame" x="0.0" y="0.0" width="681" height="485"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e6p-Fh-8yZ">
+                                            <rect key="frame" x="276" y="337" width="128" height="128"/>
+                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="NSApplicationIcon" id="LvO-Gu-5aL"/>
+                                        </imageView>
+                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qmd-yV-402" userLabel="munkiTabDetails">
+                                            <rect key="frame" x="17" y="83" width="645" height="110"/>
+                                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" id="3v1-mQ-geh">
+                                                <font key="font" metaFont="system" size="18"/>
+                                                <string key="title">MUNKI_TAB_DETAILS
+MUNKI_TAB_DETAILS
+MUNKI_TAB_DETAILS
+MUNKI_TAB_DETAILS
+MUNKI_TAB_DETAILS</string>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <progressIndicator fixedFrame="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="xsw-rb-5Ml" userLabel="munkiTabMeteredBar">
+                                            <rect key="frame" x="219" y="214" width="240" height="20"/>
+                                        </progressIndicator>
+                                        <progressIndicator fixedFrame="YES" maxValue="100" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="RFu-IQ-zNq" userLabel="munkiTabIndeterminateBar">
+                                            <rect key="frame" x="323" y="201" width="32" height="32"/>
+                                        </progressIndicator>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wk5-7B-aql" userLabel="munkiTabLabel">
+                                            <rect key="frame" x="67" y="241" width="547" height="88"/>
+                                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="MUNKI_TAB_LABEL" id="tiv-wU-HfF">
+                                                <font key="font" metaFont="systemBold" size="24"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                    </subviews>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="5" identifier="2" id="XIO-yz-3aE" userLabel="lastTab">
+                                <view key="view" id="Ldz-fb-DJU">
+                                    <rect key="frame" x="0.0" y="0.0" width="681" height="485"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c6e-0m-9rT" userLabel="lastTabLabel">
+                                            <rect key="frame" x="5" y="285" width="670" height="44"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="LAST_TAB_LABEL" id="zNI-So-FI5">
+                                                <font key="font" metaFont="system" size="32"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eXE-IF-8Df" userLabel="lastTabIcon">
+                                            <rect key="frame" x="276" y="337" width="128" height="128"/>
+                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="NSApplicationIcon" id="z6s-D6-def"/>
+                                        </imageView>
+                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6oV-BN-lwd" userLabel="lastTabDetails">
+                                            <rect key="frame" x="18" y="77" width="645" height="200"/>
+                                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" id="Ftd-Hs-wYU">
+                                                <font key="font" metaFont="system" size="18"/>
+                                                <string key="title">LAST_TAB_DETAILS
+LAST_TAB_DETAILS
+LAST_TAB_DETAILS
+LAST_TAB_DETAILS
+LAST_TAB_DETAILS
+LAST_TAB_DETAILS
+LAST_TAB_DETAILS
+LAST_TAB_DETAILS
+LAST_TAB_DETAILS</string>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BCg-EI-YC3" userLabel="lastTabRestartButton">
+                                            <rect key="frame" x="288" y="13" width="105" height="32"/>
+                                            <buttonCell key="cell" type="push" title="Restart" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="VX1-op-guO">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                                <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="clickedRestartButton:" target="Voe-Tx-rLC" id="Sk9-N1-a5M"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </view>
+                            </tabViewItem>
+                            <tabViewItem label="1" identifier="1" id="Bk9-PY-pcu" userLabel="errorTab">
+                                <view key="view" id="w0o-j1-45B">
+                                    <rect key="frame" x="0.0" y="0.0" width="681" height="485"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MJf-I6-u1g">
+                                            <rect key="frame" x="284" y="41" width="112" height="32"/>
+                                            <buttonCell key="cell" type="push" title="Try Again" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Jfl-Py-fxG">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                                <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="clickedStartOverButton:" target="Voe-Tx-rLC" id="mss-Lt-JeB"/>
+                                            </connections>
+                                        </button>
+                                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yLq-S6-3lr">
+                                            <rect key="frame" x="276" y="337" width="128" height="128"/>
+                                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="NSApplicationIcon" id="uhL-r7-Qq0"/>
+                                        </imageView>
+                                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qwD-hE-Lmw">
+                                            <rect key="frame" x="5" y="285" width="670" height="44"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Enrollment encountered a problem." id="jSL-Zd-Sp4">
+                                                <font key="font" metaFont="system" size="32"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Usa-oD-e7W">
+                                            <rect key="frame" x="18" y="77" width="645" height="200"/>
+                                            <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="No explanation is available." id="Y4I-jx-QfO">
+                                                <font key="font" metaFont="system" size="18"/>
+                                                <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Blp-RE-she">
+                                            <rect key="frame" x="284" y="41" width="112" height="32"/>
+                                            <buttonCell key="cell" type="push" title="Continue" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2Jf-ca-Tvd">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                                <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="clickedIgnoreWarningButton:" target="Voe-Tx-rLC" id="RtY-Iw-fun"/>
+                                            </connections>
+                                        </button>
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xdI-Kq-NzH">
+                                            <rect key="frame" x="284" y="41" width="112" height="32"/>
+                                            <buttonCell key="cell" type="push" title="Exit" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="QTv-no-ryX">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                                <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                                            </buttonCell>
+                                            <connections>
+                                                <action selector="clickedStopButton:" target="Voe-Tx-rLC" id="159-j8-ca3"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </view>
+                            </tabViewItem>
+                        </tabViewItems>
+                    </tabView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="4JW-29-xhi" secondAttribute="centerY" constant="0.5" id="9JH-Yl-TLx"/>
+                    <constraint firstAttribute="centerX" secondItem="4JW-29-xhi" secondAttribute="centerX" constant="-0.5" id="OTu-ru-mEF"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="578" y="364"/>
+        </window>
+        <arrayController id="zpV-Aa-7sm">
+            <connections>
+                <binding destination="Voe-Tx-rLC" name="contentArray" keyPath="groupsDictFilteredArray" id="uMa-jR-4W0"/>
+            </connections>
+        </arrayController>
+    </objects>
+    <resources>
+        <image name="NSApplicationIcon" width="128" height="128"/>
+    </resources>
+</document>

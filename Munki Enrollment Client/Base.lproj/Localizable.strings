@@ -1,0 +1,91 @@
+/*
+  Localizable.strings
+  Munki Enrollment Client
+
+  Created by Gerrit E Dewitt on 3/30/16.
+  Copyright (c) 2016 Georgia State University. All rights reserved.
+*/
+
+// 1st tab:
+"FIRST_TAB_LABEL" = "Ready To Enroll";
+"FIRST_TAB_LABEL_IN_PROGRESS" = "One moment, please...";
+"FIRST_TAB_DETAILS" = "This computer must be connected to the network via Ethernet. Any connected Apple Ethernet adapters will be recognized automatically.";
+"FIRST_TAB_DETAILS_IN_PROGRESS" = "The Munki Enrollment Client is determining what to do next.\n\nIt's normal to see this message a few times if the computer had to restart to apply an Apple Software Update, for example.";
+
+// PE tab:
+"PE_TAB_HEADING" = "Previously Enrolled System";
+"PE_TAB_DETAILS_1" = "This computer already has a manifest in the Munki repository.\nThat manifest contains the following name and computer group association.";
+"PE_TAB_ACTION_LABEL" = "Do you want to use the same name and computer group association?";
+"PE_TAB_NAME_DETAILS" = "If not already joined to the directory domain, this name will be used.\nDirectory joining happens automatically.";
+
+// Group tab:
+"GROUP_TAB_HEADING" = "Computer Group";
+"GROUP_TAB_SUBHEADING" = "The computer group determines what software and configuration are deployed to this Mac.";
+"GROUP_TAB_ACTION_LABEL" = "Select a group to join.";
+
+// Name tab:
+"NAME_TAB_HEADING" = "Computer Name";
+"NAME_TAB_SUBHEADING" = "Provide a name for this computer or use the one suggested.";
+"NAME_TAB_DETAILS_2" = "The name must be 15 characters or less.\n\nThis name will be saved to the server for future\nenrollments of this computer in case you want to use it again.\n\nIf not already joined to the directory domain, this name will be used.\nDirectory joining happens automatically.";
+"NAME_TAB_ACTION_LABEL" = "You will confirm your group and name selections next.";
+
+// Confirmation tab:
+"CONFIRMATION_TAB_HEADING" = "Confirm Name and Group Selection";
+"CONFIRMATION_TAB_LABEL_IN_PROGRESS" = "Setting Computer Name and Group...";
+"CONFIRMATION_TAB_SUBHEADING" = "Click Go Back if you made a mistake.";
+"CONFIRMATION_TAB_ACTION_LABEL" = "Are the name and group selections correct?";
+
+// Munki tab:
+"MUNKI_TAB_LABEL_REBOOTING" = "Restarting the computer...";
+"MUNKI_TAB_LABEL_DEFAULT" = "Running Managed Software Center...";
+"MUNKI_TAB_LABEL_MUNKI_STATE_CHECKING" = "Checking in...";
+"MUNKI_TAB_LABEL_MUNKI_STATE_CHECK_FINISHED" = "Check-in finished; preparing next task...";
+"MUNKI_TAB_LABEL_MUNKI_STATE_INSTALLING" = "Installing...";
+"MUNKI_TAB_LABEL_MUNKI_STATE_INSTALL_FINISHED" = "Installations finished; preparing next task...";
+"MUNKI_TAB_DETAILS_DEFAULT" = "Waiting for feedback from Munki...";
+"MUNKI_TAB_DETAILS_REBOOTING" = "The Enrollment Client will resume its operations after the computer restarts.";
+"MUNKI_TAB_DETAILS2" = "This computer is installing software defined by its group selection and any Apple software updates.  You can see installation progress in the Managed Software Center window (in front of this one).\n\nYou must leave this computer connected to the network via Ethernet.";
+
+
+// Last tab:
+"LAST_TAB_LABEL" = "Enrollment Complete – Restart Required";
+"LAST_TAB_DETAILS" = "This computer has been successfully enrolled and needs to restart.\n\nUse the Managed Software Center to find and install software licensed to the university or your departmental group.  It will also notify you when Apple software or university-provided updates are available.\n\nSome software and configuration may be applied automatically to meet policies or as determined by your IT team.\n\nContact your IT team if you have any questions.";
+
+// Error tab:
+"ERROR_TAB_LABEL_UNCAUGHT_EXCEPTION" = "Uncaught Exception";
+
+"ERROR_TAB_LABEL_PRE_ENROLLMENT_WARN_GIGABIT" = "Slow Network";
+"ERROR_TAB_DETAILS_PRE_ENROLLMENT_WARN_GIGABIT" = "This computer's Ethernet connection does not provide gigabit speeds.  Installation tasks will take considerably longer than expected.";
+
+"ERROR_TAB_LABEL_NOT_ROOT" = "Log Out to Enroll";
+"ERROR_TAB_DETAILS_NOT_ROOT" = "Connect this computer to the network via Ethernet\nthen log out from the Apple menu.\n\nThe Enrollment Client will automatically run in the login window context\n(over the OS X login window).\n\nIt may be easier to see it if this system is connected to only a single display.";
+
+
+"ERROR_TAB_LABEL_PRE_ENROLLMENT_NO_NETWORK" = "Not Connected to Network";
+"ERROR_TAB_DETAILS_PRE_ENROLLMENT_NO_NETWORK" = "This computer is not connected to the network via Ethernet.  Connect using an Apple Ethernet adapter or by using the built-in Ethernet port (if present), then try again.";
+"ERROR_TAB_LABEL_PRE_ENROLLMENT_INVALID_SERIAL" = "Invalid Apple Serial";
+"ERROR_TAB_DETAILS_PRE_ENROLLMENT_INVALID_SERIAL" = "The pre-enrollment script was unable to determine the hardware serial of this computer.\n\nContact IIT if the problem persists.";
+"ERROR_TAB_LABEL_PRE_ENROLLMENT_UNSUPPORTED_OS" = "Unsupported OS X Version";
+"ERROR_TAB_DETAILS_PRE_ENROLLMENT_UNSUPPORTED_OS" = "This computer is running a version of OS X that's too old.  Use the Mac App Store to install the latest version of OS X, or backup, erase, and re-image it with a current version.";
+"ERROR_TAB_LABEL_PRE_ENROLLMENT_FAILED" = "Problem Running Script";
+"ERROR_TAB_DETAILS_PRE_ENROLLMENT_FAILED" = "The pre-enrollment script did not successfully complete its tasks.  Please try again.\n\nContact IIT if the problem persists.";
+"ERROR_TAB_DETAILS_PRE_ENROLLMENT_UNCAUGHT_EXCEPTION" = "Running the pre-enrollment script produced an uncaught exception.  Please try again.\n\nContact IIT if the problem persists.";
+
+
+"ERROR_TAB_LABEL_TRANSACTION_A_FAILED_ENROLLMENT" = "Failed Enrollment";
+"ERROR_TAB_DETAILS_TRANSACTION_A_FAILED_ENROLLMENT" = "The enrollment client was unable to enroll this computer.  Make sure this computer is connected to the network via Ethernet, then try again.\n\nContact IIT if the problem persists after you have verified that this computer is on the network.";
+"ERROR_TAB_LABEL_TRANSACTION_A_FAILED_TRANSACTION" = "Problem Running Initial Transaction";
+"ERROR_TAB_DETAILS_TRANSACTION_A_FAILED_TRANSACTION" = "The enrollment client was not able to successfully enroll, create local users, or enumerate group manifests.  Please verify that this computer is connected to the network via Ethernet, then try again.\n\nContact IIT if the problem persists after you have verified that this computer is on the network.";
+"ERROR_TAB_DETAILS_TRANSACTION_A_UNCAUGHT_EXCEPTION" = "Transaction A produced an uncaught exception.  Please try again.";
+
+"ERROR_TAB_LABEL_TRANSACTION_B_FAILED_GROUP_JOIN" = "Failed to Join Group";
+"ERROR_TAB_DETAILS_TRANSACTION_B_FAILED_GROUP_JOIN" = "The enrollment client was unable to join a computer group.  Enrollment is not complete.  Verify that this computer is connected to the network via Ethernet, then try again.\n\nContact IIT if the problem persists after you have verified that this computer is on the network.";
+"ERROR_TAB_LABEL_TRANSACTION_B_FAILED_NAME_RECORDING" = "Failed to Record Name";
+"ERROR_TAB_DETAILS_TRANSACTION_B_FAILED_NAME_RECORDING" = "The enrollment client was unable to record this computer's name in the metadata of its manifest.  Enrollment is not complete.  Verify that this computer is connected to the network via Ethernet, then try again.\n\nContact IIT if the problem persists after you have verified that this computer is on the network.";
+"ERROR_TAB_LABEL_TRANSACTION_B_FAILED_SETTING_NAMES" = "Failed to Set Computer Names";
+"ERROR_TAB_DETAILS_TRANSACTION_B_FAILED_SETTING_NAMES" = "The enrollment client was unable to set the hostname, local host name, and computer name using scutil.  Make sure the name you are choosing is no longer than 15 characters.";
+"ERROR_TAB_DETAILS_TRANSACTION_B_UNCAUGHT_EXCEPTION" = "Transaction B produced an uncaught exception.  Please try again.";
+
+
+"ERROR_TAB_LABEL_NO_GROUPS" = "No Groups Available";
+"ERROR_TAB_DETAILS_NO_GROUPS" = "No computer groups were received from the enrollment server.  Make sure the computer is connected to the network via Ethernet, then try again.\n\nContact IIT if the problem persists.";
