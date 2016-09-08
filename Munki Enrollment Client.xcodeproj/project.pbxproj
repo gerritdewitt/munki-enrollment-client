@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F33D93C1D6E47CD00E5D6B7 /* preenrollment.py in Resources */ = {isa = PBXBuildFile; fileRef = 1F33D93B1D6E47CD00E5D6B7 /* preenrollment.py */; };
+		1F33D9421D6E49A800E5D6B7 /* transaction_a.py in Resources */ = {isa = PBXBuildFile; fileRef = 1F33D9411D6E49A800E5D6B7 /* transaction_a.py */; };
+		1F33D9441D6E4CAF00E5D6B7 /* transaction_b.py in Resources */ = {isa = PBXBuildFile; fileRef = 1F33D9431D6E4CAF00E5D6B7 /* transaction_b.py */; };
+		1F3DB3C91B7A3B990010F593 /* launch-agent.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F3DB3C81B7A3B990010F593 /* launch-agent.plist */; };
+		1F416ED11D67B527008C2064 /* munki.py in Resources */ = {isa = PBXBuildFile; fileRef = 1F416ED01D67B527008C2064 /* munki.py */; };
+		1F8A1CB21CAC32260058C659 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F8A1CB41CAC32260058C659 /* Localizable.strings */; };
+		1FA595C21B71648300B66646 /* enrollment-client.py in Resources */ = {isa = PBXBuildFile; fileRef = 1FA595C11B71648300B66646 /* enrollment-client.py */; };
+		1FB1A5E51D760BD80029A543 /* last_steps.py in Resources */ = {isa = PBXBuildFile; fileRef = 1FB1A5E41D760BD80029A543 /* last_steps.py */; };
+		1FBC161D1B70165E00435BDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBC161C1B70165E00435BDE /* AppDelegate.m */; };
+		1FBC161F1B70165E00435BDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBC161E1B70165E00435BDE /* main.m */; };
+		1FBC16211B70165E00435BDE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FBC16201B70165E00435BDE /* Images.xcassets */; };
+		1FBC16241B70165E00435BDE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FBC16221B70165E00435BDE /* MainMenu.xib */; };
+		1FE70F5E1B8F6FF700270E41 /* configuration.py in Resources */ = {isa = PBXBuildFile; fileRef = 1FE70F5D1B8F6FF700270E41 /* configuration.py */; };
+		1FE70F611B8F719700270E41 /* osx.py in Resources */ = {isa = PBXBuildFile; fileRef = 1FE70F601B8F719700270E41 /* osx.py */; };
+		1FE70F631B8F740600270E41 /* common.py in Resources */ = {isa = PBXBuildFile; fileRef = 1FE70F621B8F740600270E41 /* common.py */; };
+		1FE70F651B8F78B000270E41 /* security.py in Resources */ = {isa = PBXBuildFile; fileRef = 1FE70F641B8F78B000270E41 /* security.py */; };
+		1FE70F671B8F7C8400270E41 /* server.py in Resources */ = {isa = PBXBuildFile; fileRef = 1FE70F661B8F7C8400270E41 /* server.py */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		1F8A1CB11CAC30560058C659 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = "com.apple.build-tasks.copy-strings-file";
+			fileType = text.plist.strings;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# builtin-copyStrings\n";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXFileReference section */
+		1F2EBD911B7CFB4700814AC0 /* postinstall */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = postinstall; path = "Munki Enrollment Client/postinstall"; sourceTree = SOURCE_ROOT; };
+		1F33D93B1D6E47CD00E5D6B7 /* preenrollment.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = preenrollment.py; path = "Munki Enrollment Client/preenrollment.py"; sourceTree = SOURCE_ROOT; };
+		1F33D9411D6E49A800E5D6B7 /* transaction_a.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = transaction_a.py; path = "Munki Enrollment Client/transaction_a.py"; sourceTree = SOURCE_ROOT; };
+		1F33D9431D6E4CAF00E5D6B7 /* transaction_b.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = transaction_b.py; path = "Munki Enrollment Client/transaction_b.py"; sourceTree = SOURCE_ROOT; };
+		1F3DB3C81B7A3B990010F593 /* launch-agent.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "launch-agent.plist"; path = "Munki Enrollment Client/launch-agent.plist"; sourceTree = SOURCE_ROOT; };
+		1F3DB3CA1B7A3D510010F593 /* build-script.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "build-script.sh"; path = "Munki Enrollment Client/build-script.sh"; sourceTree = SOURCE_ROOT; };
+		1F416ED01D67B527008C2064 /* munki.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = munki.py; path = "Munki Enrollment Client/munki.py"; sourceTree = SOURCE_ROOT; };
+		1F8A1CB31CAC32260058C659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1FA595C11B71648300B66646 /* enrollment-client.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = "enrollment-client.py"; path = "Munki Enrollment Client/enrollment-client.py"; sourceTree = SOURCE_ROOT; };
+		1FB1A5E41D760BD80029A543 /* last_steps.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = last_steps.py; path = "Munki Enrollment Client/last_steps.py"; sourceTree = SOURCE_ROOT; };
+		1FBC16161B70165E00435BDE /* Munki Enrollment Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Munki Enrollment Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FBC161A1B70165E00435BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Munki Enrollment Client/Info.plist"; sourceTree = SOURCE_ROOT; };
+		1FBC161B1B70165E00435BDE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; name = AppDelegate.h; path = "Munki Enrollment Client/AppDelegate.h"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		1FBC161C1B70165E00435BDE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; name = AppDelegate.m; path = "Munki Enrollment Client/AppDelegate.m"; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		1FBC161E1B70165E00435BDE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Munki Enrollment Client/main.m"; sourceTree = SOURCE_ROOT; };
+		1FBC16201B70165E00435BDE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Munki Enrollment Client/Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		1FBC16231B70165E00435BDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1FE70F5D1B8F6FF700270E41 /* configuration.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = configuration.py; path = "Munki Enrollment Client/configuration.py"; sourceTree = SOURCE_ROOT; };
+		1FE70F601B8F719700270E41 /* osx.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = osx.py; path = "Munki Enrollment Client/osx.py"; sourceTree = SOURCE_ROOT; };
+		1FE70F621B8F740600270E41 /* common.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = common.py; path = "Munki Enrollment Client/common.py"; sourceTree = SOURCE_ROOT; };
+		1FE70F641B8F78B000270E41 /* security.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = security.py; path = "Munki Enrollment Client/security.py"; sourceTree = SOURCE_ROOT; };
+		1FE70F661B8F7C8400270E41 /* server.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = server.py; path = "Munki Enrollment Client/server.py"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FBC16131B70165E00435BDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F037E831B7B8D25007A3C5F /* package scripts */ = {
+			isa = PBXGroup;
+			children = (
+				1F3DB3CA1B7A3D510010F593 /* build-script.sh */,
+				1F2EBD911B7CFB4700814AC0 /* postinstall */,
+			);
+			name = "package scripts";
+			sourceTree = "<group>";
+		};
+		1FBC160D1B70165E00435BDE = {
+			isa = PBXGroup;
+			children = (
+				1FBC16181B70165E00435BDE /* Munki Enrollment Client */,
+				1FBC16171B70165E00435BDE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FBC16171B70165E00435BDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FBC16161B70165E00435BDE /* Munki Enrollment Client.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FBC16181B70165E00435BDE /* Munki Enrollment Client */ = {
+			isa = PBXGroup;
+			children = (
+				1F037E831B7B8D25007A3C5F /* package scripts */,
+				1F3DB3C81B7A3B990010F593 /* launch-agent.plist */,
+				1FBC161C1B70165E00435BDE /* AppDelegate.m */,
+				1FBC161B1B70165E00435BDE /* AppDelegate.h */,
+				1FBC16201B70165E00435BDE /* Images.xcassets */,
+				1FBC16221B70165E00435BDE /* MainMenu.xib */,
+				1FA595C11B71648300B66646 /* enrollment-client.py */,
+				1FE70F5F1B8F700000270E41 /* supporting enrollment-client.py */,
+				1FBC16191B70165E00435BDE /* Supporting Files */,
+			);
+			name = "Munki Enrollment Client";
+			path = "Enroll GSU Mac";
+			sourceTree = "<group>";
+		};
+		1FBC16191B70165E00435BDE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FBC161A1B70165E00435BDE /* Info.plist */,
+				1FBC161E1B70165E00435BDE /* main.m */,
+				1F8A1CB41CAC32260058C659 /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			path = "Munki Enrollment Client/Supporting Files";
+			sourceTree = "<group>";
+		};
+		1FE70F5F1B8F700000270E41 /* supporting enrollment-client.py */ = {
+			isa = PBXGroup;
+			children = (
+				1FB1A5E41D760BD80029A543 /* last_steps.py */,
+				1F33D93B1D6E47CD00E5D6B7 /* preenrollment.py */,
+				1F33D9411D6E49A800E5D6B7 /* transaction_a.py */,
+				1F33D9431D6E4CAF00E5D6B7 /* transaction_b.py */,
+				1F416ED01D67B527008C2064 /* munki.py */,
+				1FE70F661B8F7C8400270E41 /* server.py */,
+				1FE70F641B8F78B000270E41 /* security.py */,
+				1FE70F601B8F719700270E41 /* osx.py */,
+				1FE70F621B8F740600270E41 /* common.py */,
+				1FE70F5D1B8F6FF700270E41 /* configuration.py */,
+			);
+			name = "supporting enrollment-client.py";
+			path = "Munki Enrollment Client/core scripts";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FBC16151B70165E00435BDE /* Munki Enrollment Client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FBC16331B70165E00435BDE /* Build configuration list for PBXNativeTarget "Munki Enrollment Client" */;
+			buildPhases = (
+				1FBC16121B70165E00435BDE /* Sources */,
+				1FBC16131B70165E00435BDE /* Frameworks */,
+				1FBC16141B70165E00435BDE /* Resources */,
+				1F5090A31B7A4DAC00EAD603 /* ShellScript */,
+			);
+			buildRules = (
+				1F8A1CB11CAC30560058C659 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = "Munki Enrollment Client";
+			productName = "Enroll GSU Mac";
+			productReference = 1FBC16161B70165E00435BDE /* Munki Enrollment Client.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FBC160E1B70165E00435BDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Georgia State University";
+				TargetAttributes = {
+					1FBC16151B70165E00435BDE = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 1FBC16111B70165E00435BDE /* Build configuration list for PBXProject "Munki Enrollment Client" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FBC160D1B70165E00435BDE;
+			productRefGroup = 1FBC16171B70165E00435BDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FBC16151B70165E00435BDE /* Munki Enrollment Client */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FBC16141B70165E00435BDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F8A1CB21CAC32260058C659 /* Localizable.strings in Resources */,
+				1F3DB3C91B7A3B990010F593 /* launch-agent.plist in Resources */,
+				1FE70F651B8F78B000270E41 /* security.py in Resources */,
+				1F33D93C1D6E47CD00E5D6B7 /* preenrollment.py in Resources */,
+				1F416ED11D67B527008C2064 /* munki.py in Resources */,
+				1F33D9421D6E49A800E5D6B7 /* transaction_a.py in Resources */,
+				1FB1A5E51D760BD80029A543 /* last_steps.py in Resources */,
+				1FBC16211B70165E00435BDE /* Images.xcassets in Resources */,
+				1FBC16241B70165E00435BDE /* MainMenu.xib in Resources */,
+				1F33D9441D6E4CAF00E5D6B7 /* transaction_b.py in Resources */,
+				1FE70F5E1B8F6FF700270E41 /* configuration.py in Resources */,
+				1FA595C21B71648300B66646 /* enrollment-client.py in Resources */,
+				1FE70F631B8F740600270E41 /* common.py in Resources */,
+				1FE70F611B8F719700270E41 /* osx.py in Resources */,
+				1FE70F671B8F7C8400270E41 /* server.py in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F5090A31B7A4DAC00EAD603 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./\"Munki Enrollment Client/build-script.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FBC16121B70165E00435BDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FBC161F1B70165E00435BDE /* main.m in Sources */,
+				1FBC161D1B70165E00435BDE /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1F8A1CB41CAC32260058C659 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F8A1CB31CAC32260058C659 /* Base */,
+			);
+			name = Localizable.strings;
+			path = "Munki Enrollment Client";
+			sourceTree = SOURCE_ROOT;
+		};
+		1FBC16221B70165E00435BDE /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FBC16231B70165E00435BDE /* Base */,
+			);
+			name = MainMenu.xib;
+			path = "Munki Enrollment Client";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FBC16311B70165E00435BDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1FBC16321B70165E00435BDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1FBC16341B70165E00435BDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Munki Enrollment Client/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1FBC16351B70165E00435BDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/Munki Enrollment Client/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FBC16111B70165E00435BDE /* Build configuration list for PBXProject "Munki Enrollment Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FBC16311B70165E00435BDE /* Debug */,
+				1FBC16321B70165E00435BDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FBC16331B70165E00435BDE /* Build configuration list for PBXNativeTarget "Munki Enrollment Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FBC16341B70165E00435BDE /* Debug */,
+				1FBC16351B70165E00435BDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FBC160E1B70165E00435BDE /* Project object */;
+}

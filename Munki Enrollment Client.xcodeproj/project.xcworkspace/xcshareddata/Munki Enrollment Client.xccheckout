@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>44B29895-8259-4EEB-913C-458895ECE9B8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Munki Enrollment Client</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>438DC5F3EC3101864E382BB2C8F58F3BF0659027</key>
+		<string>https://ecdevgit.server.gsu.edu/mac/Munki-Enrollment-Client.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Munki Enrollment Client.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>438DC5F3EC3101864E382BB2C8F58F3BF0659027</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://ecdevgit.server.gsu.edu/mac/Munki-Enrollment-Client.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>438DC5F3EC3101864E382BB2C8F58F3BF0659027</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>438DC5F3EC3101864E382BB2C8F58F3BF0659027</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Munki-Enrollment-Client</string>
+		</dict>
+	</array>
+</dict>
+</plist>
