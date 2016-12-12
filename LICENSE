@@ -4,6 +4,11 @@ written by Gerrit DeWitt for Georgia State University.
 This project contains and makes use of existing open-source and publicly-documented know-how
 (collectively, "the existing items").
 
+Note that the installer package (as created by the build-script.sh) includes a
+version of the Munki Tools (Munki) that you specify.  Munki itself is available under
+an Apache License (https://github.com/munki/munki/blob/master/LICENSE.md).
+This license in no way restricts your rights to Munki itself.
+
 Refer to the Sources section of the ReadMe.md file for references.
 Where practical, we have documented sources for know-how except for when generally
 known to those skilled in the art or otherwise in the public domain.
