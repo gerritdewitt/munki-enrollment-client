@@ -5,12 +5,12 @@
 
 # Written by Gerrit DeWitt (gdewitt@gsu.edu)
 # Project started 2015-06-15.  This file separated 2015-08-27.
-# 2016-08-19.
+# 2016-08-19, 2017-01-09.
 # Copyright Georgia State University.
 # This script uses publicly-documented methods known to those skilled in the art.
 # References: See top level Read Me.
 
-import plistlib, xml, subprocess, platform, pwd
+import plistlib, xml, subprocess, platform, pwd, time
 # Load our modules:
 import common
 
@@ -58,6 +58,7 @@ def networksetup_detect_network_hardware():
         subprocess.check_call(['/usr/sbin/networksetup',
                                '-detectnewhardware'])
         common.print_info("Ran networksetup to detect network hardware.")
+        time.sleep(10) # Let the system get IP addresses...
         return True
     except subprocess.CalledProcessError:
         common.print_error("Error while running networksetup to detect network hardware.")

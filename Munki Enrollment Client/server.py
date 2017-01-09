@@ -5,7 +5,7 @@
 
 # Written by Gerrit DeWitt (gdewitt@gsu.edu)
 # Project started 2015-06-15.  This file separated 2015-08-27.
-# 2016-08-19,30.
+# 2016-08-19,30, 2017-01-04.
 # Copyright Georgia State University.
 # This script uses publicly-documented methods known to those skilled in the art.
 # References: See top level Read Me.
@@ -159,16 +159,19 @@ def test_connections():
         common.print_info("Testing connection to server %s..." % server_uri)
         for i in range(0,retry_count):
             # Assume unverified context:
+            server_response = None
             try:
                 ssl_context = ssl.create_default_context()
                 ssl_context.check_hostname = False
                 ssl_context.verify_mode = ssl.CERT_NONE
                 server_response = urllib.urlopen(server_uri,None,context=ssl_context)
-                test_result = True
-                break
+                if server_response:
+                    test_result = True
+                    break
             except IOError:
-                # Next try:
-                common.print_error("Could not contact %(server)s.  Delaying 5 seconds (try %(attempt)s of %(retries)s)." % {"server":server_uri,"attempt":str(i+1),"retries":str(retry_count)})
-                time.sleep(5)
+                pass
+            # Delay for next try:
+            common.print_error("Could not contact %(server)s.  Delaying 10 seconds (try %(attempt)s of %(retries)s)." % {"server":server_uri,"attempt":str(i+1),"retries":str(retry_count)})
+            time.sleep(10)
     # Return:
     return test_result

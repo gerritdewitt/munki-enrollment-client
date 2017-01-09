@@ -6,7 +6,7 @@
 
 # Written by Gerrit DeWitt (gdewitt@gsu.edu)
 # Project started 2015-06-15.  This file created 2015-08-11.
-# 2016-01-05.
+# 2016-01-05, 2017-01-04/9.
 # Copyright Georgia State University.
 # This script uses publicly-documented methods known to those skilled in the art.
 # References: See top level Read Me.
@@ -21,13 +21,8 @@ declare -i CLEANUP_WHEN_DONE=0
 # General paths:
 declare -x XCODE_PROJ_DIR=$(dirname "$PRODUCT_SETTINGS_PATH")
 
-# Variables for building the overall product:
+# Staging dir:
 declare -x PROD_STAGING_PATH="$BUILD_DIR/staging" # no spaces in these paths or productbuild will fail to accept them as components!
-declare -x PROD_DISTRIBUTION_PATH="$PROD_STAGING_PATH/Distribution"
-declare -x PROD_PACKAGE_PATH="$PROD_STAGING_PATH/Munki-Enrollment-Client.pkg" # no spaces in this name or productbuild will fail!
-declare -x PROD_PACKAGE_FINAL_PATH="$BUILD_DIR/Munki Enrollment Client.pkg"
-declare -x PROD_DIST_PACKAGES_ARG=""
-declare -x PROD_BUILD_PACKAGES_ARG=""
 
 # Paths to built app and agent:
 declare -x BUILT_APP_PATH="$BUILD_DIR/Debug/$TARGET_NAME.app"
@@ -44,11 +39,18 @@ declare -x MEC_VERSION="$(defaults read "$BUILT_APP_PATH/Contents/Info.plist" CF
 declare -x MEC_PACKAGE_PATH="$PROD_STAGING_PATH/munki-enrollment-client-$MEC_VERSION.pkg" # no spaces in this name or productbuild will fail to accept it as a component!
 
 # Variables for downloading the specified version of munkitools from munkibuilds.org:
-declare -x MUNKI_VERSION="2.8.0.2810"
+declare -x MUNKI_VERSION="2.8.2.2855"
 declare -x MUNKI_DOWNLOAD_URI="https://munkibuilds.org/$MUNKI_VERSION/munkitools-$MUNKI_VERSION.pkg"
 declare -x MUNKI_DOWNLOAD_MD5="https://munkibuilds.org/$MUNKI_VERSION/MD5"
 declare -x MUNKI_PRODUCT_PACKAGE_PATH="$BUILD_DIR/munkitools-$MUNKI_VERSION.pkg"
 declare -x MUNKI_EXPANDED_PRODUCT_PATH="$BUILD_DIR/munkitools-expanded-product"
+
+# Variables for building the overall product:
+declare -x PROD_DISTRIBUTION_PATH="$PROD_STAGING_PATH/Distribution"
+declare -x PROD_PACKAGE_PATH="$PROD_STAGING_PATH/Munki-Enrollment-Client.pkg" # no spaces in this name or productbuild will fail!
+declare -x PROD_PACKAGE_FINAL_PATH="$BUILD_DIR/Munki_Enrollment_Client-$MEC_VERSION.pkg"
+declare -x PROD_DIST_PACKAGES_ARG=""
+declare -x PROD_BUILD_PACKAGES_ARG=""
 
 # MARK: prepost_common_cleanup()
 # Removes various temporary or intermediate directories and files used by the packaging process.

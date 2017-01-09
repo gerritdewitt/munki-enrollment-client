@@ -383,7 +383,7 @@
     // Loop count:
     NSInteger loopCounterPlusOne = self.munkiLoopCounter +1;
     NSString *loopStr = [NSString stringWithFormat:@"doMunkiLoop: loop %ld of %ld", (long)loopCounterPlusOne, (long)self.munkiLoopCounterMaximum];
-    NSLog(loopStr);
+    NSLog(@"%@", loopStr);
     
     // Debug:
     if (self.munkiState & MUNKI_STATE_TOP_OF_LOOP){
