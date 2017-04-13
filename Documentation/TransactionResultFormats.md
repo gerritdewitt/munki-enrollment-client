@@ -11,19 +11,17 @@ Result Files
    * **network_status**: dictionary: Contains details describing the network status of the client:
       * **network_available**: boolean: True if at least one Ethernet network is present **and** if at least one Munki Enrollment Server could be contacted via HTTPS.  False otherwise.
       * **ethernet_interfaces**: array of dictionaries: Each dictionary describes an active Ethernet connection:
-         * **identifier**: string: The BSD identifier of the network interface (for example, _en0_).
+         * **identifier**: string: The BSD identifier of the network interface (for example, *en0*).
          * **media**: string: The media subtype.  Used to look for gigabit.
          * **ip_addresses**: array of strings: Each IP address assigned to the interface.
       * **gigabit_available**: boolean: True if at least one Ethernet is gigabit and on the “desired” network.  False otherwise.
       * **gigabit_ethernet_interfaces**: array of strings: The BSD identifiers of interfaces that are gigabit and on the “desired” network.
    * **client_serial_valid**: boolean: True if an 11- or 12-digit Apple Hardware Serial could be read.  False otherwise.
    * **computer_name_suffix**: string: A string of five alphanumeric characters taken from a section of the Apple Hardware Serial.  Used by the Munki Enrollment Client when suggesting a unique name for the technician.
-   * **os_version**: dictionary: Contains details describing the version of OS X on the client:
-      * **major**: integer: The major version number in the form: 10.**major**.minor.  Returns 0 if unknown.
-      * **minor**: integer: The minor version number in the form: 10.major.**minor**.  Returns 0 if unknown.
-      * **str**: string: A string representation in the form: 10.major.minor.
-      * **min_major**: integer: The minimum major version of OS X supported by the MEC.
-      * **min_minor**: integer: The minimum minor version of OS X supported by the MEC.
+   * **os_version**: dictionary: Contains details describing the version of macOS on the client:
+      * **min_macos**: string: The lowest suppored macOS version read from *configuration.py*.
+      * **current_macos**: string: The measured macOS version.
+      * **valid**: boolean: True iff *current_macos* >= *min_macos*.
    
 ### Transaction-A ###
 * Path: _/Library/Preferences/edu.gsu.mec.result.transaction.a.plist_
