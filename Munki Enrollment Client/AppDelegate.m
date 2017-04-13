@@ -150,18 +150,9 @@
         BOOL gigabitAvailable = [[networkStatusDict objectForKey:@"gigabit_available"] boolValue];
 
         NSMutableDictionary *osVersionDict = [dict objectForKey:@"os_version"];
-        NSNumber *osVersionMajor = [osVersionDict objectForKey:@"major"];
-        NSNumber *osVersionMinor = [osVersionDict objectForKey:@"minor"];
-        NSNumber * minOsVersionMajor = [osVersionDict objectForKey:@"min_major"];
-        NSNumber * minOsVersionMinor = [osVersionDict objectForKey:@"min_minor"];
-        
-        // Is this OS X version supported?
-        BOOL supportedOsVersion = NO; // default
-        if ([osVersionMajor isGreaterThan: minOsVersionMajor]){
-            supportedOsVersion = YES;
-        } else if (([osVersionMajor isEqualToNumber:minOsVersionMajor]) && ([osVersionMinor isGreaterThanOrEqualTo:minOsVersionMinor])){
-            supportedOsVersion = YES;
-        }
+        //NSNumber *currOSVers = [osVersionDict objectForKey:@"current_macos"];
+        //NSNumber *minOSVers = [osVersionDict objectForKey:@"min_macos"];
+        BOOL supportedOsVersion = [[osVersionDict objectForKey:@"valid"] boolValue];
         
         if (result == YES){
             // Read computer name suffix provided by the pre-enrollment script.
@@ -192,7 +183,7 @@
             self.errorDetailStr = NSLocalizedString(@"ERROR_TAB_DETAILS_PRE_ENROLLMENT_INVALID_SERIAL", nil);
             [self showErrorTab];
         } else if (supportedOsVersion == NO){
-            // Catch unsupported OS X:
+            // Catch unsupported macOS:
             self.errorType = 0x00;
             self.errorType |= ERROR_TYPE_STOP;
             self.errorLabelStr = NSLocalizedString(@"ERROR_TAB_LABEL_PRE_ENROLLMENT_UNSUPPORTED_OS", nil);

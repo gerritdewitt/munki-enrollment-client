@@ -5,7 +5,7 @@
 
 # Written by Gerrit DeWitt (gdewitt@gsu.edu)
 # Project started 2015-06-15.  This file separated 2015-08-27.
-# 2016-08-19, 2017-01-09.
+# 2016-08-19, 2017-01-09, 2017-04-10.
 # Copyright Georgia State University.
 # This script uses publicly-documented methods known to those skilled in the art.
 # References: See top level Read Me.
@@ -90,13 +90,11 @@ def reboot_system():
         return False
 
 def platform_get_system_version():
-    '''Returns major and minor versions: 10.major.minor.'''
-    version_str = platform.mac_ver()[0]
-    version_list = version_str.split('.')
+    '''Returns the macOS system version as string.'''
     try:
-        return int(version_list[1]), int(version_list[2])
+        return platform.mac_ver()[0]
     except IndexError:
-        return 0,0
+        return "0"
 
 def nonsystem_users_exist():
     '''Returns true if non-system accounts have been created.'''

@@ -18,7 +18,7 @@ declare -x AUTO_LOGIN_PASSWORD_FILE_MOVED="$3/private/etc/kcpasswd.moved"
 declare -x LOGIN_WINDOW_PREFS_FILE="$3/Library/Preferences/com.apple.loginwindow.plist"
 declare -x RESULT_TRANSACTION_A_FILE_PATH="$3/Library/Preferences/edu.gsu.mec.result.transaction.a.plist"
 
-# Do not show the OS X Setup Assistant:
+# Do not show the OS Setup Assistant:
 # Only relevant to systems without user accounts (e.g. ones
 # imaged with an AutoDMG-generated, never-booted system).
 # Since we may be installing to a system that we just imaged

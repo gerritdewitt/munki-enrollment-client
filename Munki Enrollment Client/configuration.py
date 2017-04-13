@@ -5,7 +5,7 @@
 
 # Written by Gerrit DeWitt (gdewitt@gsu.edu)
 # Project started 2015-06-15.  This file separated 2015-08-27.
-# 2016-08-25.
+# 2016-08-25, 2017-04-10.
 # Copyright Georgia State University.
 # This script uses publicly-documented methods known to those skilled in the art.
 # References: See top level Read Me.
@@ -22,8 +22,7 @@ class Site(object):
         self.NTP_SERVER = "ntp.example.com" # address of NTP server
         self.NETWORK_IP_SEARCH_STR = "10.0." # first octet or octets common to your site
 
-        self.MIN_OS_VERS_MAJOR = 10
-        self.MIN_OS_VERS_MINOR = 5
+        self.MIN_MACOS_VERS = "10.11"
 
         self.ENROLLMENT_SERVER_URIS_ARRAY = []  # array of servers to try, in this order
         self.ENROLLMENT_SERVER_URIS_ARRAY.append("https://enrollment-server.example.com:8443/enroll")

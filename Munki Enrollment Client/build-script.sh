@@ -6,7 +6,7 @@
 
 # Written by Gerrit DeWitt (gdewitt@gsu.edu)
 # Project started 2015-06-15.  This file created 2015-08-11.
-# 2016-01-05, 2017-01-04/9.
+# 2016-01-05, 2017-01-04/9, 2017-04-10.
 # Copyright Georgia State University.
 # This script uses publicly-documented methods known to those skilled in the art.
 # References: See top level Read Me.
@@ -89,7 +89,7 @@ function build_mec_package(){
     chmod -R 0755 "$MEC_PACKAGE_ROOT_DIR" && echo "Set permissions on package root."
     chmod 0644 "$MEC_PACKAGE_ROOT_DIR/$INSTALLED_AGENT_PATH" && echo "Set permissions on launch agent in package root."
     # Remove ._ files from package root:
-    find "$MEC_PACKAGE_ROOT_DIR" -name ._* -exec rm {} \;
+    find "$MEC_PACKAGE_ROOT_DIR" -name ._\* -exec rm {} \;
     # Remove .DS_Store files from package root:
     find "$MEC_PACKAGE_ROOT_DIR" -name .DS_Store -exec rm {} \;
     # Build MEC package:
