@@ -1,13 +1,13 @@
 About
 ----------
-The Munki Enrollment Client (MEC) is an OS X app written in Objective-C with included scripts writtin in Python and bash. Working with the Munki Enrollment Server (MES), it enrolls the computer with a Munki repository, creating a computer manifest, private key, and certificate for per-device authentication.  It joins the computer's manifest to an appropriate group manifest (via the _included_manifests_ key in the computer's manifest), and it performs various “first boot” setup.  Communication between the MEC and the MES is encrypted in transit with HTTPS.
+The Munki Enrollment Client (MEC) is a Mac app written in Objective-C with included scripts writtin in Python. Working with the Munki Enrollment Server (MES), it enrolls the computer with a Munki repository, creating a computer manifest, private key, and certificate for per-device authentication.  It joins the computer's manifest to an appropriate group manifest (via the _included_manifests_ key in the computer's manifest), and it performs various “first boot” setup.  Communication between the MEC and the MES is encrypted in transit with HTTPS.
 
 The MEC is delivered to a client system via an installer package.  Its package may be installed to enroll a Mac ad-hoc (without erasing and re-imaging it), and it may be installed at the end of an imaging procedure (such as a DeployStudio workflow).  The installer package distributes these items:
    * **/Applications/Munki Enrollment Client.app**, the app including its embedded scripts, and
    * **/Library/LaunchAgents/edu.gsu.mec.plist**, the launch agent responsible for loading the MEC in the the Login Window context.
 
 Besides installing the MEC, its installer package executes a _postinstall_ script that does the following:
-   * It touches _/private/var/db/.AppleSetupDone_ on the installation target's volume to prevent the OS X Setup Assistant from appearing.  This is primarily for the “just imaged” case where a system may have had an image restored and the MEC should perform first boot setup.
+   * It touches _/private/var/db/.AppleSetupDone_ on the installation target's volume to prevent the Setup Assistant from appearing.  This is primarily for the “just imaged” case where a system may have had an image restored and the MEC should perform first boot setup.
    * It moves _/private/etc/kcpasswd_ on the installation target's volume to a different path to temporarily disable automatic login.  Automatic login is restored after the MEC completes its tasks.
    * It sets the _DisableFDEAutoLogin_ key to true in the _com.apple.loginwindow_ preference for the system domain.  This temporarily disables FileVault's ability to bypass the login window after a disk is unlocked at boot.  FileVault's ability to bypass the login window is restored after the MEC completes its tasks.
 FDE automatic login (by setting the DisableFDEAutoLogin key to true in the com.apple.loginwindow domain on the installation target's volume).
